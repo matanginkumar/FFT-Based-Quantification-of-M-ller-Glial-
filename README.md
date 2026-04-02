@@ -1,4 +1,4 @@
-#Müller Glia FFT Analysis Macros
+# Müller Glia FFT Analysis Macros
 
 This repository contains ImageJ/Fiji macros used to quantify the directional organization of RLBP1-labeled Müller glial stalks in retinal sections.
 
@@ -9,15 +9,15 @@ FFT-based analysis of directional organization from the resulting mask
 
 These macros were developed for retinal section images in which Müller glia are labeled with RLBP1, but the general workflow may also be useful for other images containing aligned filamentous structures.
 
-##Files
+## Files
 Skeletonization macro.ijm
 Converts an image of labeled stalks into a simplified centerline mask by identifying local intensity maxima across image columns and rows.
 CalculateFFT_Macro.ijm
 Performs FFT-based directional analysis on the centerline mask, generates polar plots, and outputs measurements related to isotropy and orientation.
 
-##Overview of the workflow
+## Overview of the workflow
 
-###Step 1: Skeletonization / centerline extraction
+### Step 1: Skeletonization / centerline extraction
 
 The skeletonization macro reduces thick labeled structures into a simpler mask that preserves their overall spatial arrangement.
 
@@ -31,7 +31,7 @@ The output is a simplified centerline mask of the labeled structures
 
 This step helps reduce variation caused by signal thickness while preserving the organization of the Müller glial stalks.
 
-###Step 2: FFT-based directional analysis
+### Step 2: FFT-based directional analysis
 
 The FFT macro analyzes the centerline mask in frequency space to quantify directional organization.
 
@@ -78,7 +78,7 @@ For the analysis described in the manuscript:
 centerline masks were generated from projected images
 a standardized ROI was then analyzed by FFT
 
-###How to use
+### How to use
 1. Generate the centerline mask
 
 Open your projected image in Fiji and run:
